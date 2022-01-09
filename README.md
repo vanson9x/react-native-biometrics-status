@@ -1,6 +1,6 @@
 # react-native-biometrics-status
 
-no description
+Only support IOS. Required ios >= 11
 
 ## Installation
 
