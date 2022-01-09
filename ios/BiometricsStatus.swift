@@ -3,6 +3,10 @@ import LocalAuthentication
 @objc(BiometricsStatus)
 class BiometricsStatus: NSObject {
 
+    @objc static func requiresMainQueueSetup() -> Bool {
+        return false
+    }
+
     @objc(reset:withRejecter:)
         func reset(resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
             let context = LAContext()
