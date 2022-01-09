@@ -17,6 +17,10 @@ const BiometricsStatus = NativeModules.BiometricsStatus
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return BiometricsStatus.multiply(a, b);
+export function reset(): Promise<boolean> {
+  return BiometricsStatus.reset();
+}
+
+export function hasChanged(): Promise<boolean | string | undefined> {
+  return BiometricsStatus.hasChanged();
 }
