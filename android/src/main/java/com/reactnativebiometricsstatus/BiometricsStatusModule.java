@@ -23,12 +23,12 @@ public class BiometricsStatusModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void reset() {
+    public void reset(Promise promise) {
         promise.resolve(true);
     }
 
     @ReactMethod
-    public void hasChanged() {
+    public void hasChanged(Promise promise) {
         promise.resolve(false);
     }
 
