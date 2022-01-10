@@ -22,13 +22,16 @@ public class BiometricsStatusModule extends ReactContextBaseJavaModule {
         return NAME;
     }
 
-
-    // Example method
-    // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod
-    public void multiply(int a, int b, Promise promise) {
-        promise.resolve(a * b);
+    public void reset() {
+        promise.resolve(true);
     }
 
-    public static native int nativeMultiply(int a, int b);
+    @ReactMethod
+    public void hasChanged() {
+        promise.resolve(false);
+    }
+
+    public static native int nativeReset();
+    public static native int nativeHasChanged();
 }

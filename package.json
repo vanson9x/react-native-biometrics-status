@@ -1,6 +1,6 @@
 {
   "name": "react-native-biometrics-status",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "no description",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -143,5 +143,6 @@
         }
       ]
     ]
-  }
+  },
+  "dependencies": {}
 }
