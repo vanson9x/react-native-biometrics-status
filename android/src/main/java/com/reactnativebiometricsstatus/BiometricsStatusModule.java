@@ -38,7 +38,7 @@ public class BiometricsStatusModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void reset(Promise promise) {
+    public void reset(Promise pm) {
         generateSecretKey();
         pm.resolve(true);
     }
